@@ -1,4 +1,4 @@
-# Lightweight Social App (LinkedIn-like)  
+# Lightweight Social App POC  
 
 **Submitted By:** Ayan Raza ([LinkedIn](https://www.linkedin.com/in/ayan-raza/))
 Deployed Link: https://notification-assignment.vercel.app/
@@ -14,7 +14,7 @@ This system is a lightweight LinkedIn-like social application built with Firebas
 
 ### 1. Frontend (Vite + React + TypeScript)  
 - **Pages:** Home, Notifications, Profile, SignIn, Search  
-- **Components:** Navbar, CreatePost  
+- **Components:** Navbar, CreatePost, PostCard 
 - **Routing:** React Router DOM  
 - **Styling:** Tailwind CSS  
 - **State Management:** React Context (for authentication)  
@@ -24,7 +24,7 @@ This system is a lightweight LinkedIn-like social application built with Firebas
 - **Database:** Firestore (posts, user profiles, notifications)  
   - **Structure:**  
     - `users`: uid, displayName, email, followers[], following[], photoURL  
-    - `notifications` (sub-collection): notification_id, type, title, desc, read, imageURL, actionURL, timestamp  
+        - `notifications` (sub-collection): notification_id, type, title, desc, read, imageURL, actionURL, timestamp  
     - `posts`: post_id, author_id, content, imageURL, likedBy[], timestamp  
 - **Cloud Functions:** Server-side triggers for notifications  
   - `followUser`: Updates follower/following lists and notifications  
