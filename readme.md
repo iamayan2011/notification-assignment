@@ -1,6 +1,7 @@
 # Lightweight Social App (LinkedIn-like)  
 
 **Submitted By:** Ayan Raza ([LinkedIn](https://www.linkedin.com/in/ayan-raza/))
+Deployed Link: https://notification-assignment.vercel.app/
 
 ---
 
